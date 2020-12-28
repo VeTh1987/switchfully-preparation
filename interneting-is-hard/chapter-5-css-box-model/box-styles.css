@@ -2,6 +2,24 @@ h1, p {
     background-color: #DDE0E3;
 }
 
+h1 {
+    padding: 50px;
+}
+
+p {
+   /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px; */
+
+    /* padding: 20px 30px; */
+    
+    padding: 20px 0 20px 10px;
+}
+
 em,strong {
     background-color:  #B2D6FF;
+    /* display: block; */
+    display:inline;         /* This is the default for em and strong */
+
 }
