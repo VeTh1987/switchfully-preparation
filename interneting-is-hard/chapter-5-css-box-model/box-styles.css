@@ -16,8 +16,22 @@ p {
     /* padding: 20px 30px; */
 
     padding: 20px 0 20px 10px;
+    margin-top: 25px;
     margin-bottom: 50px;          /* Add this */
+
 }
+
+div {
+    color: #FFF;
+    background-color: #5995DA;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+    width: 200px;
+    word-wrap: break-word;
+  }
 
 em,strong {
     background-color:  #B2D6FF;
