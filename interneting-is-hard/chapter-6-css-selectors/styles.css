@@ -3,13 +3,36 @@
     margin: 0 auto;
 }
 
-.synopsis {
+.page > p:first-of-type {
+    color: #7E8184;
+    font-style: italic;
+  }
+  .page > p:first-of-type em{
+    font-style: normal;
+  }
+/*
+ p:first-of-type {
+    color: #7E8184;
+    font-style: italic;
+  }
+
+  p:first-of-type  em {
+    font-style: normal;
+  }
+  */
+
+ .synopsis {
     color: #7E8184;
     font-style: italic;
 }
 
 .synopsis em {
     font-style: normal;
+  }
+
+
+p:last-of-type {
+    margin-bottom: 50px;
   }
 
 .button:link,                 /* Change this */
