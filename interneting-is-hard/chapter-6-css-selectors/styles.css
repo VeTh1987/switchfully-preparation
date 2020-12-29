@@ -80,6 +80,10 @@ p:last-of-type {
   background-color: #EEB75A;     /* Yellow */
 }
 
+#button-2 {
+    color: #5D6063;  /* Dark gray */
+  }
+
 a:link {
     color: blue;
     text-decoration: none;
