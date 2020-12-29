@@ -8,15 +8,24 @@
     font-style: italic;
 }
 
+.synopsis em {
+    font-style: normal;
+  }
+
 .button {
     color: #FFF;
-  background-color: #5995DA;    /* Blue */
-  font-weight: bold;
-  padding: 20px;
-  text-align: center;
-  border: 2px solid #5D6063;    /* Dark gray */
-  border-radius: 5px;
+    background-color: #5995DA;    /* Blue */
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;    /* Dark gray */
+    border-radius: 5px;
 
-  width: 200px;
-  margin: 20px auto;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.call-to-action {
+    font-style: italic;
+    background-color: #EEB75A;    /* Yellow */
 }
