@@ -1,6 +1,9 @@
 .page {
     width: 900px;
     margin: 0 auto;
+    overflow: hidden;             /* Add this */
+    background-color: #EAEDF0;    /* Add this */
+   /* border: 1px solid red;  /* Add this */
   }
 
 .menu {
@@ -23,6 +26,7 @@
 }
   
 .footer {
+    clear: both;            /* Add this */
     height: 200px;
     background-color: #D6E9FE;    /* Light blue */
 }
