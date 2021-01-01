@@ -1,10 +1,15 @@
 .page {
     width: 900px;
     margin: 0 auto;
-    overflow: hidden;             /* Add this */
-    background-color: #EAEDF0;    /* Add this */
+   /* overflow: hidden;             /* Add this */
+   /* background-color: #1a0801;    /* Add this */
    /* border: 1px solid red;  /* Add this */
-  }
+ }
+
+.container {
+    overflow: hidden;
+    background-color: #EAEDF0;
+}
 
 .menu {
     height: 100px;
