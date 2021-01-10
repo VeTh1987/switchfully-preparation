@@ -8,4 +8,9 @@ INSERT INTO groceries VALUES(4,"Ice Cream",1,12);
 INSERT INTO groceries VALUES(5,"Cherries", 6,2);
 INSERT INTO groceries VALUES(6,"Chocolate Syrup", 1,4);
 
-SELECT * FROM groceries WHERE aisle > 5 ORDER BY aisle;
+/* SELECT * FROM groceries WHERE aisle > 5 ORDER BY aisle; */
+
+SELECT aisle, SUM(quantity) FROM groceries GROUP BY aisle ORDER BY aisle;
+
+SELECT MAX(quantity) FROM groceries;
+
