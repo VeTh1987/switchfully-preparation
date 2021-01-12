@@ -10,6 +10,7 @@ INSERT INTO exercise_logs(type,minutes,calories,heart_rate) VALUES
 	("biking",30,100,110),
     ("biking",10,30,105),
     ("dancing",15,200,120),
+    ("dancing", 15, 165, 120),
     ("tree climbing",30,70,90),
     ("tree climbing",25,72,80),
     ("rowing",30,70,90),
@@ -35,3 +36,9 @@ INSERT INTO drs_favorites(type, reason) VALUES ("hiking", "Increases cardiovascu
 SELECT * FROM exercise_logs WHERE type IN (SELECT type FROM drs_favorites);
 
 SELECT * FROM exercise_logs WHERE type IN (SELECT type FROM drs_favorites WHERE reason LIKE "%cardio%");
+
+SELECT type, SUM(calories) AS total_calories FROM exercise_logs GROUP BY type HAVING total_calories > 132;
+
+SELECT type, AVG(calories) AS avg_calories FROM exercise_logs GROUP BY type HAVING avg_calories > 70;
+
+SELECT type FROM exercise_logs GROUP BY type HAVING COUNT(*) > 1;
