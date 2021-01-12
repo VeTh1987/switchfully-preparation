@@ -42,3 +42,26 @@ SELECT type, SUM(calories) AS total_calories FROM exercise_logs GROUP BY type HA
 SELECT type, AVG(calories) AS avg_calories FROM exercise_logs GROUP BY type HAVING avg_calories > 70;
 
 SELECT type FROM exercise_logs GROUP BY type HAVING COUNT(*) > 1;
+
+SELECT COUNT(*) FROM exercise_logs WHERE heart_rate > 220 -30;
+
+SELECT COUNT(*) FROM exercise_logs WHERE heart_rate >= ROUND(0.50* (220-30)) AND heart_rate <= ROUND(0.9*(220-30));
+
+SELECT type, heart_rate,
+		CASE
+			WHEN heart_rate > 220-30 THEN "above max"
+            WHEN heart_rate > ROUND(0.90 * (220-30)) THEN "above target"
+            WHEN heart_rate > ROUND(0.50 * (220-30)) THEN "within target"
+            ELSE "below target"
+		END as "hr_zone"
+FROM exercise_logs;
+
+SELECT COUNT(*), 
+		CASE
+			WHEN heart_rate > 220-30 THEN "above max"
+            WHEN heart_rate > ROUND(0.90 * (220-30)) THEN "above target"
+            WHEN heart_rate > ROUND(0.50 * (220-30)) THEN "within target"
+            ELSE "below target"
+		END as "hr_zone"
+FROM exercise_logs
+GROUP BY hr_zone;
