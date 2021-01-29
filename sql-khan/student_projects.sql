@@ -29,6 +29,8 @@ INSERT INTO student_grades (student_id, test, grade)
 INSERT INTO student_grades (student_id, test, grade)
     VALUES (2, "Chemistry", 95);
 
-CREATE TABLE student_projects (id INTEGER PRIMARY KEY, student_id INTEGER, title TEXT);
+CREATE TABLE student_projects (id INTEGER AUTO_INCREMENT PRIMARY KEY, student_id INTEGER, title TEXT);
 
 INSERT INTO student_projects (student_id, title) VALUES (1, "Carrotapault");
+
+SELECT students.first_name, students.last_name, student_projects.title FROM students LEFT OUTER JOIN student_projects ON students.id = student_projects.student_id;
