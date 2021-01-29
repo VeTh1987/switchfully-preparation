@@ -56,10 +56,16 @@
   
   /* Tablet Styles */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
-    body {
+    /* body {
       background-color: #F5CF8E; /* Yellow */
       
-    }
+    /* } */
+    
+    .sign-up,
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+      width: 50%;
   }
   
   /* Desktop Styles */
@@ -68,3 +74,4 @@
       background-color: #B2D6FF; /* Blue */
     }
   }
+}
