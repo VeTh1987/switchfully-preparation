@@ -1,5 +1,5 @@
 # switchfully-preparation
 
 interneting-is-hard  
-sololearn
+sololearn  
 khan-sql
